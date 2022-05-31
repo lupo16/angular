@@ -1,0 +1,58 @@
+<div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 style="color: red">name | lowercase esempio</h2>
+          <h1>{{ name | lowercase }}</h1>
+          <hr />
+          <h2 style="color: red">name | uppercase esempio</h2>
+          <h1>{{ name | uppercase }}</h1>
+          <hr />
+          <h2 style="color: red">messaggio | titlecase</h2>
+          <h1>{{ message | titlecase }}</h1>
+          <hr />
+          <h2 style="color: red">name | slice:3:5 esempio</h2>
+          <h1>{{ name | slice: 3:5 }}</h1>
+          <h1>{{ name }}</h1>
+          <hr />
+          <h2 style="color: red">persona | json esempio</h2>
+          <h1>{{ persona | json }}</h1>
+          <hr />
+        </div>
+        <div class="col">
+          <h2 style="color: red">numeri | number esempio</h2>
+          <h1>{{ 25.678111 | number: "1.2-4" }}</h1>
+          <h2 style="color: rgb(0, 81, 255)">
+            la stringa utilizzata e' 5.678 | number: "1.2-4"<br />
+            I numeri dopo number stanno a significare che: <br />
+            1 (quanti numeri interi deve visualizzare prima del punto)<br />
+            . (Passa ai numeri dopo il punto) <br />
+            2 (quante cifre decimali massime deve far visualizzare prima di far
+            morire il numero) <br />
+            -3 (Quanti NUMERI TOTALI deve far visualizzare massimo nel browser)
+            <br />
+            <hr />
+            <h2 style="color: red">numero | percent</h2>
+            <h1>{{ 0.5 | percent }}</h1>
+            <h2 style="color: red">numero | currency</h2>
+            <h1>{{ 0.25 | currency }}</h1>
+            <h2 style="color: red">numero | currency(con valuta)</h2>
+            <h1>{{ 0.25 | currency: "EUR" }}</h1>
+            <h1>{{ 100 | currency: "JPY" }}</h1>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Questo date e' stata fatta da Davide Demerson Ringrazia</p>
+            <h2>{{ 1653636696147 | date: "dd/MM/YYYY" }}</h2>
+            <h2 style="color: red">date | short</h2>
+            <h1>{{ ciao | date: "short" }}</h1>
+            <h2 style="color: red">date | shortDate</h2>
+            <h1>{{ ciao | date: "shortDate" }}</h1>
+            <h2 style="color: red">date | shortTime</h2>
+            <h1>{{ ciao | date: "shortTime" }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

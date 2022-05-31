@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  ///titleFromParent = 'Passaggio di valore da Padre a figlio';
+  ///ciao='Ciao';
+  cibiPreferiti:string[]=[" pasta"," lasagna"," pizza"];
+
+ // myObject = {
+ //   id:10,
+   /// url:"http//ljdslo/hishdi"
+ // }
+
+  //constructor{
+   // this.myValue=10;
+//  }
 }
+
